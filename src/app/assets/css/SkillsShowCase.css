@@ -1,0 +1,25 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Apply the animation to the logo list */
+.logo-list {
+  animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+}
+
+/* Style the logo container */
+.logo-container {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 128px,
+    black calc(100% - 128px),
+    transparent 100%
+  );
+  overflow: hidden;
+}

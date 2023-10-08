@@ -1,0 +1,21 @@
+.whoami {
+  font-family: "Permanent Marker";
+  position: relative; /* Add this line */
+}
+
+.whoami::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; /* Adjust this to control the distance between the line and the text */
+  height: 8px;
+  width: 4rem;
+  background: #7843e9;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+.description {
+  padding-top: 50px;
+  color: #053b50;
+  left: 50%;
+}

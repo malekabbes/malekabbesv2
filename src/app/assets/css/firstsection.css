@@ -1,0 +1,80 @@
+.window-tab {
+  width: fit-content;
+  height: fit-content;
+  padding-bottom: 3vw;
+
+  border-top: none;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* Style for the tab header (top section) */
+.tab-header {
+  background-color: #e20101;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  color: #fff;
+}
+
+/* Style for the buttons */
+.tab-button {
+  background-color: #fff3f3;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  height: 1vw;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Style for the content area */
+.tab-content {
+  padding: 10px;
+}
+
+.mouse {
+  width: 35px;
+  height: 50px;
+  border: 2px solid #333;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+}
+
+.mouse::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #053b50;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 1.3s infinite;
+  -webkit-animation: wheel 1.3s infinite;
+}
+.home-hero__mouse-scroll-cont {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}

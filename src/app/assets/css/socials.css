@@ -1,0 +1,42 @@
+.home-hero__socials {
+  position: absolute;
+  top: 30vw;
+  right: 0%;
+  transform: translateY(-50%);
+  background: #eeeeee;
+  box-shadow: rgba(3, 3, 227, 0.2) 0 7px 29px 0;
+  padding: 0.5rem;
+  z-index: 99;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .home-hero__socials {
+    display: none;
+  }
+}
+.home-hero__social {
+  width: 4rem;
+}
+
+.home-hero__social-icon-link {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.home-hero__social-icon-link:hover {
+  background: rgba(120, 67, 233, 0.2);
+}
+
+.home-hero__social-icon-link--bd-none {
+  border-bottom: 0;
+}
+
+.home-hero__social-icon {
+  width: 100%;
+}
+.resumeicon:hover {
+  cursor: pointer;
+}
