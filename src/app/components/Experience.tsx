@@ -1,6 +1,5 @@
 "use client";
 import { motion, stagger, animate } from "framer-motion";
-import { useEffect } from "react";
 import TitlesComponent from "./Titles";
 import "@/app/assets/css/experience.css";
 import TechSvg from "./TechSvg";

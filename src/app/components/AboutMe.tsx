@@ -1,4 +1,3 @@
-import logo from "@/app/assets/img/myphoto.png";
 import "@/app/assets/css/aboutme.css";
 import React from "react";
 import { TiInfoLargeOutline } from "react-icons/ti";
@@ -17,8 +16,10 @@ const AboutMe = () => {
             <div className="account-profile">
               <Image
                 alt="logo"
-                src={logo}
+                src="/myphoto.png"
                 className="profile-image w-60 h-80 rounded-full border-2 border-indigo-500 relative mx-auto bt-16 h-auto sm:w-40 xs:40 md:w-50 lg:w-60"
+                width={200}
+                height={200}
               />
               <div className="blob-wrap">
                 <div className="blob"></div>

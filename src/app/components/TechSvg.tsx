@@ -6,13 +6,13 @@ type langProps = {
   name: string;
 };
 const TechSvg: FC<langProps> = ({ name }: langProps) => {
-  const imageSrc = require(`@/app/assets/img/techs/${name}.svg`).default;
+  // const imageSrc = require(`@/app/assets/img/techs/${name}.svg`).default;
 
   return (
     <>
       <Image
         alt={name}
-        src={imageSrc}
+        src={`/${name}.svg`}
         width={110}
         height={110}
         data-tooltip-target={name}

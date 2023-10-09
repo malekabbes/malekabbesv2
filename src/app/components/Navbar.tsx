@@ -3,16 +3,13 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
-import cltag from "@/app/assets/img/cltag.png";
 import "@/app/assets/css/navbar.css";
-import logo from "@/app/assets/img/logo.gif";
 import { link } from "fs";
 import { PiProjectorScreenChart } from "react-icons/pi";
 import { SiAboutdotme } from "react-icons/si";
 import { BiHomeSmile } from "react-icons/bi";
 import { GrContactInfo } from "react-icons/gr";
-import { Suspense } from "react";
-import Loading from "../loading";
+
 const Navbar = () => {
   const navigation = [
     {
@@ -45,7 +42,7 @@ const Navbar = () => {
                     <div className="flex-shrink-0">
                       <span className="logotext text-slate-50 dark:text-black">
                         <Image
-                          src={logo}
+                          src="/logo.gif"
                           alt="maleklogo"
                           width="190"
                           height="120"
@@ -54,8 +51,10 @@ const Navbar = () => {
                         <span>
                           <Image
                             className="h-20 w-16"
-                            src={cltag}
+                            src="/cltag.png"
                             alt="Workflow"
+                            width="90"
+                            height="100"
                           />
                         </span>
                       </span>

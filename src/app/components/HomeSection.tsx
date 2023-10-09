@@ -1,9 +1,6 @@
 "use client";
 import { Container, Row, Col } from "react-grid-system";
 import React, { useState, useEffect } from "react";
-import InternshipCountry from "@/app/assets/img/france.svg";
-import typing from "@/app/assets/img/typing.gif";
-import avatar from "@/app/assets/img/avatar.svg";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { DiNodejs, DiReact } from "react-icons/di";
@@ -59,11 +56,7 @@ const HomeSection = () => {
           <div className="text-sm font-medium flex items-center">
             Am currently looking for an internship in
             <span className="ml-2">
-              <Image
-                alt="internshipcountry"
-                src={InternshipCountry}
-                width={20}
-              />
+              <Image alt="internshipcountry" src="france.svg" width={20} />
             </span>
           </div>
           <svg
@@ -169,7 +162,7 @@ const HomeSection = () => {
               </Col>
               <Col xs={3} md={5}>
                 <Image
-                  src={avatar}
+                  src="/avatar.svg"
                   alt="typinganimation"
                   className="m-0 hidden lg:block  top-0"
                   width={320}
